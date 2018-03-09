@@ -1,0 +1,102 @@
+section.list {
+	display: block;
+}
+.header {
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	background: green;
+}
+.header .go-back {
+	float: left;
+	position: relative;
+}
+.header .go-back .arrow {
+	position: absolute;
+	border: 10px solid transparent;
+	border-right-color: #fff;
+	top: 20px;
+}
+.header .go-back .arrow.green {
+	top: -10px;
+    left: -7px;
+    border-right-color: green;
+}
+.header .login {
+	float: right;
+	margin-right: 10px;
+}
+.header h1 {
+	font-size: 24px;
+	text-align: center;
+	text-indent: 30px;
+}
+.search {
+	display: -webkit-box;
+	padding: 10px;
+}
+.search input {
+	-webkit-box-flex: 1;
+	border: 1px solid green;
+	outline: none;
+	padding: 10px;
+	display: block;
+	font-size: 12px;
+}
+.search span {
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	background: green;
+	width: 80px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.nav {
+	margin-bottom: 10px;
+}
+.nav li {
+	float: left;
+	width: 12.5%;
+	text-align: center;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+}
+.list-container {
+	display: -webkit-box;
+}
+.left-container,
+.right-container {
+	-webkit-box-flex: 1;
+	font-size: 0;
+}
+.left-container {
+	padding: 0 3px 0 6px;
+}
+.right-container {
+	padding: 0 6px 0 3px;
+}
+.list-container a {
+	display: block;
+	width: 100%;
+	margin-bottom: 6px;
+}
+.list-container img {
+	width: 100%;
+}
+.go-top {
+	position: fixed;
+	right: 20px;
+	bottom: 100px;
+	font-size: 12px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	width: 28px;
+	text-align: center;
+	line-height: 14px;
+	padding: 4px;
+	display: none;
+}

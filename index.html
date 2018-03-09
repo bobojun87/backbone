@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="maximum-scale=1, minimum-scale=1, initial-scale=1, user-scalable=no, width=device-width">
+	<title>图片网</title>
+	<style type="text/css">
+		.list {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<!-- 容器元素 -->
+<div id="ickt">
+	<!-- (div.header>(div.go-back>span.arrow>span.arrow.green)+div.login{登录}+h1{爱创课堂图片网})+(div.search>input[placeholder="搜索你想要的图片"]+span{搜一搜})+(ul.nav>li*8)+div.list-container>(div.left-container>(a>img[src=img/0$.jpg])*3)+div.right-container>(a>img[src=img/0$@3.jpg])*3 -->
+	<section class="list">
+		<div class="header">
+			<div class="go-back"><span class="arrow"><span class="arrow green"></span></span></div>
+			<div class="login">登录</div>
+			<h1>图片网</h1>
+		</div>
+		<div class="search"><input type="text" placeholder="搜索你想要的图片"><span>搜一搜</span></div>
+		<ul class="nav clearfix">
+			<li data-type="0">摄影</li>
+			<li data-type="1">明星</li>
+			<li data-type="2">人物</li>
+			<li data-type="3">动漫</li>
+			<li data-type="4">风景</li>
+			<li data-type="5">壁纸</li>
+			<li data-type="6">宠物</li>
+			<li data-type="7">素描</li>
+		</ul>
+		<div class="list-container">
+			<div class="left-container"></div>
+			<div class="right-container"></div>
+		</div>
+		<div class="go-top">返回顶部</div>
+	</section>
+	<section class="layer"></section>
+	
+</div>
+<script type="text/template" id="tpl_layer">
+	<div class="layer-container" style="<%=style%>"><img src="<%=src%>" alt=""></div>
+	<div class="header">
+		<div class="go-back"><</div>
+		<h1><%=title%></h1>
+	</div>
+</script>
+<!-- amd -->
+<script type="text/javascript" data-main="js/bootstrap" src="js/lib/require.js"></script>
+</body>
+</html>
